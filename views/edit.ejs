@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs'); -%>
+<h1>Enter the book info here!</h1>
+<form action="/edit/<%= book.id %>" method="post">
+    <h3>Title</h3>
+    <input type="text" name="title" value="<%= book.title %>">
+    <h3>Isbn</h3>
+    <input type="text" name="isbn" value="<%= book.isbn %>">
+    <h3>Name of Author</h3>
+    <input type="text" name="author" value="<%= book.author %>">
+    <h3>Describe the book</h3>
+    <textarea type="text" name="description" rows="8" cols="60"><%= book.description %></textarea>
+    <br/>
+    <h3>Rating</h3>
+    <input type="number" name="rating" value="<%= book.rating %>">
+    <button class="submitbutton"type="submit">Submit</button>
+</form>
+
+
+<%- include('partials/footer.ejs'); -%>
