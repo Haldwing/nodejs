@@ -1,0 +1,77 @@
+html {
+    background-color: palegoldenrod
+}
+
+.toolbar h1 {
+    color: palegoldenrod
+}
+
+.toolbar a {
+    text-decoration: none;
+    color: palegoldenrod;
+    right: 250px;
+}
+
+.big-container {
+    background-color: palegoldenrod;
+    
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.sort {
+    position: absolute;
+    left: 135px;
+}
+
+
+
+.notes-container {
+    background-color: palegoldenrod;
+    text-align: center;
+    width: 50%;
+    padding: 40px;
+
+
+}
+
+.post-container {
+    color: black
+    
+}
+
+.pw-box{
+    margin-bottom: 10px;
+}
+
+.img-container {
+   float: left;
+   margin: 40px;
+   min-height: 700px;
+}
+
+.toolbar{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(28, 0, 114)
+}
+
+.text-container {
+    float: right;
+    width: 40%;
+    min-height: 800px;
+}
+
+.submitbutton {
+    border-color: transparent;
+    border-radius: 5px;
+    width: 60px;
+    background-color: rgb(167, 152, 111);
+}
+
+.logoutbtn {
+    margin-top: 20px;
+}
