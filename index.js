@@ -38,10 +38,7 @@ const getNewDate = function (){
     return morefunction(date);
 }
 
-app.get("/dotable", async (req, res) => {
-    await db.query("CREATE TABLE booknotes (id SERIAL PRIMARY KEY, notes TEXT, book_id INT)");
-    res.send("<h1>done</h1>");
-});
+
 
 app.get("/", (req, res) => {
     res.redirect("/home");
