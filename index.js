@@ -16,12 +16,14 @@ app.use(express.static("public"));
 
 const db = new pg.Client({
     user: "postgres",
-    host: "viaduct.proxy.rlwy.net",
+    host: "monorail.proxy.rlwy.net",
     database: "railway",
-    password: "FmTdaZNMgvCxfPfDxmTqPFRyTLrRKelE",
-    port: "19933",
+    password: "ttDDGxtZdUcjIeUDRuDFprLbMSOJiCBW",
+    port: "43034",
 });
 db.connect();
+
+
 
 const getNewDate = function (){
     let yourDate = new Date();
@@ -36,12 +38,8 @@ const getNewDate = function (){
     return morefunction(date);
 }
 
-app.get("/login", (req, res) => {
-    res.render("login.ejs");
-});
-
-app.get("/register", (req, res) => {
-    res.render("register.ejs");
+app.get("/dotable", async (req, res) => {
+    await db.query("CREATE TABLE bookinfo (id SERIAL PRIMARY KEY, title VARCHAR(45), isbn VARCHAR(30), author VARCHAR(45), description TEXT, rating INT, date VARCHAR(15))");
 });
 
 app.get("/", (req, res) => {
