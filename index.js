@@ -40,6 +40,7 @@ const getNewDate = function (){
 
 app.get("/dotable", async (req, res) => {
     await db.query("CREATE TABLE bookinfo (id SERIAL PRIMARY KEY, title VARCHAR(45), isbn VARCHAR(30), author VARCHAR(45), description TEXT, rating INT, date VARCHAR(15))");
+    res.send("<h1>done</h1>");
 });
 
 app.get("/", (req, res) => {
