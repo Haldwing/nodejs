@@ -14,14 +14,7 @@ app.use(express.static("public"));
 
 
 
-const db = new pg.Client({
-    user: "postgres",
-    host: "monorail.proxy.rlwy.net",
-    database: "railway",
-    password: "ttDDGxtZdUcjIeUDRuDFprLbMSOJiCBW",
-    port: "43034",
-});
-db.connect();
+
 
 
 
